@@ -1,0 +1,28 @@
+table.view {
+  border: solid 1px #aaa;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.view th {
+  font-size: 0.8rem;
+  padding:4px 0;
+  text-align: center;
+  background: #ccc;
+  border: solid 1px #aaa;
+}
+
+.view td{
+  font-size: 0.8rem;
+  padding: 4px;
+  border: solid 1px #ccc;
+}
+
+.view .amount{
+  text-align: right;
+}
+
+.view .count{
+  text-align: right;
+}
