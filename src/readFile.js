@@ -1,4 +1,4 @@
-const {ipcMain, dialog} = require('electron')
+const {ipcMain, dialog} = require('electron');
 
 var ret = [];
 var targetStore = "";
