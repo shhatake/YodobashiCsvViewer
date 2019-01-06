@@ -6,12 +6,17 @@
     <link rel="stylesheet" href="./css/common.css">
   </head>
   <body>
-    <button id="select-directory">ファイル選択</button><br>
+    <button id="selectFile">ファイル選択</button><br>
     <div id="file"></div>
     <div id="total"></div>
     <div id="view"></div>
+    <script type="text/javascript">
+      require('./showData');
+      // 店舗名クリックイベント
+      function detailClick(name) {
+        const {ipcRenderer} = require('electron');
+        ipcRenderer.send('showDetail', name);
+      }
+    </script>
   </body>
-  <script type="text/javascript">
-    require('./fileDialog')
-  </script>
 </html>
